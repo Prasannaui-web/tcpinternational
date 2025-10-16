@@ -1,4 +1,4 @@
-import { Box, Grid, Container, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 // import Grid from '@mui/material/Unstable_Grid';
 import EducateBG from "../assets/EducatedCustomer.webp";
@@ -37,7 +37,7 @@ const serviceCard = () => {
     return (
         <Box id='whatwilldo' component='div'>
             <Box className="bodyContainerWidth">
-                <Grid Box spacing={3} style={{ display: 'flex', gap: '24px' }}>
+                <Grid container spacing={3} style={{ display: 'flex', gap: '24px' }}>
                     {services.map((service, index) => (
                         <Grid item xs={12} md={6} lg={4} key={index}>
                             <Box className='WhatWillDoCard' style={{ background: `url(${service.image})`, backgroundSize: 'cover', overflow: 'hidden' }} >
