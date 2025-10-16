@@ -1,4 +1,4 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./Pages/Home";
 import AboutPage from "./Pages/About";
@@ -6,15 +6,15 @@ import ProjectPage from "./Pages/Projects";
 import ServicePage from "./Pages/Services";
 import ContactPage from "./Pages/Contact";
 import CareerPage from "./Pages/Career";
-import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
 export default function App() {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
+          {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectPage />} />
@@ -22,8 +22,7 @@ export default function App() {
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/career" element={<CareerPage />} />
         </Routes>
-      </HashRouter>
-
+      </BrowserRouter>
     </div>
   );
 }
