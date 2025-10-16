@@ -16,11 +16,11 @@ export default function App() {
         <Routes>
           {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectPage />} />
-          <Route path="/services" element={<ServicePage />} />
-          <Route path="/contact-us" element={<ContactPage />} />
-          <Route path="/career" element={<CareerPage />} />
+          <Route path="/tcp-international/about" element={<AboutPage />} />
+          <Route path="/tcp-international/projects" element={<ProjectPage />} />
+          <Route path="/tcp-international/services" element={<ServicePage />} />
+          <Route path="/tcp-international/contact-us" element={<ContactPage />} />
+          <Route path="/tcp-international/career" element={<CareerPage />} />
         </Routes>
       </BrowserRouter>
     </div>
